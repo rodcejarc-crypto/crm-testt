@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  /* Paleta "papel cálido" de Rhinoboots — nada de blanco puro ni gris genérico. */
+  --paper: #f6f2ea;
+  --card: #fffdf9;
+  --section: #efe8d9;
+  --section-strong: #e7dfc9;
+  --ink: #22190f;
+  --ink-muted: #6b5f4c;
+  --line: #ddd2ba;
+
+  --brand: #ed1c24;
+  --brand-dark: #c8151b;
+  --success: #3d7a4c;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-card: var(--card);
+  --color-section: var(--section);
+  --color-section-strong: var(--section-strong);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-success: var(--success);
+
+  /* Oswald: etiquetas, nav, badges, texto en mayúsculas.
+     Source Serif 4: cuerpo de texto, títulos, nombres de cliente.
+     IBM Plex Mono: todos los números (montos, conteos, cifras). */
+  --font-display: var(--font-oswald);
+  --font-body: var(--font-source-serif);
+  --font-num: var(--font-plex-mono);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), Georgia, serif;
+}
